@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "watch",
+			"label": "devs",
+			"isBackground": true,
+			"problemMatcher": ["$tsc-watch"],  // 适配 TypeScript 的错误捕获
+			"detail": "npm run watch"
+		}
+	]
+}

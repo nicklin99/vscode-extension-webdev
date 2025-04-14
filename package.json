@@ -1,0 +1,51 @@
+{
+  "name": "webagent",
+  "version": "0.0.1",
+  "description": "A sample VS Code extension project.",
+  "main": "./out/extension.js",
+  "publisher": "nicklin99",
+  "scripts": {
+    "dev": "vite src/webviews/project",
+    "vscode:prepublish": "webpack --mode production",
+    "compile": "tsc -p ./",
+    "watch": "vite build --watch src/webviews/project & tsc -watch -p ./"
+  },
+  "keywords": [
+    "vscode",
+    "extension"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.98.2"
+  },
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      {
+        "command": "webagent.project",
+        "category": "web小助手",
+        "title": "项目管理"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "@types/vscode": "^1.98.0",
+    "@types/vscode-webview": "^1.57.5",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "typescript": "^5.2.2",
+    "unplugin-auto-import": "^19.1.1",
+    "unplugin-vue-components": "^28.4.1",
+    "vite": "^6.2.3",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
+  },
+  "dependencies": {
+    "pinia": "^3.0.1",
+    "tdesign-vue-next": "^1.11.4",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "packageManager": "pnpm@8.10.5+sha1.4370a069f21873a0ad83c785b8048ed8caf6e6e9"
+}
