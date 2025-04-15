@@ -1,6 +1,6 @@
 {
   "name": "seafront-webdev",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Web项目管理",
   "description": "增强vscode的Web项目管理体验",
   "main": "./out/extension.js",
@@ -15,7 +15,7 @@
   },
   "keywords": [
     "vscode",
-    "Webdev项目管理"
+    "项目管理"
   ],
   "author": "nicklin99",
   "license": "MIT",
