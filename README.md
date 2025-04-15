@@ -12,7 +12,7 @@ Web项目管理,提供类似简化版的idea的项目管理，以增强项目管
 
 ## 贡献
 
-欢迎使用,提交问题和请求功能 https://github.com/nicklin99/vscode-extension-webdev.git，也可以邮件联系 719675210@qq.com
+欢迎使用,提交问题和请求功能 https://github.com/nicklin99/vscode-extension-webdev.git  也可以邮件联系 719675210@qq.com
 
 ## 发布插件
 
