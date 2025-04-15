@@ -13,7 +13,7 @@
 			"outFiles": [
 				"${workspaceFolder}/out/**/*.js"
 			],
-            "preLaunchTask": "devs",
+            "preLaunchTask": "pnpm run watch",
 			"env": {
 				"VSCODE_EXTENSION_MODE": "development"
 			}

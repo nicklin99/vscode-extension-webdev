@@ -1,18 +1,20 @@
 <template>
-    <div class="spaced-container">
+    <div class="container">
         <slot />
     </div>
 </template>
 
 <script>
 export default {
-    name: "SpacedContainer",
+    name: "MainContent",
 };
 </script>
 
 <style scoped>
-.spaced-container {
+.container {
     padding: 20px;
+    box-sizing: border-box;
     height: 100vh;
+    overflow-y: auto;
 }
 </style>

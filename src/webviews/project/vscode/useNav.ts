@@ -6,6 +6,9 @@ export const useNav = () => {
     return {
         navToCreate() {
             router.replace({ name: 'Home' })
+        },
+        navToCreateProject() {
+            router.push({ name: 'Create' })
         }
     }
 }

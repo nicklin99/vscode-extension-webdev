@@ -10,3 +10,11 @@ export type ProjectPayload = {
     template?: string
     ts?: boolean
 }
+
+export type MessageTargetPayload = {
+    target: string,
+}
+
+export type MessageTitlePayload = {
+    title: string,
+}

@@ -25,7 +25,6 @@ function getAssetsUri(
 }
 
 export class ProjectManager {
-  #command?: ChildProcess
   controller?: AbortController
   PROJECTS_FILE_PATH = path.join(os.homedir(), ".vscode_created_projects.json");
 
@@ -40,7 +39,7 @@ export class ProjectManager {
     }
 
     this.panel = vscode.window.createWebviewPanel(
-      "projectManager",
+      "seafront.projectManager",
       "项目管理",
       vscode.ViewColumn.One,
       {
@@ -90,6 +89,13 @@ export class ProjectManager {
     this.panel.onDidDispose(() => {
       this.panel = undefined;
     });
+  }
+
+  public createProjectView(): void {
+    this.createWebview();
+    this.panel!.webview.postMessage({
+      command: ProjectCommand.CreateProject,
+    })
   }
 
   private getWebviewContent(script: vscode.Uri, css: vscode.Uri): string {

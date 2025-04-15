@@ -1,54 +1,22 @@
-# vscode前端项目管理
+# vscode Web项目管理
 
 ## 项目简介
-这是一个 Visual Studio Code 插件项目，旨在提供一些自定义功能以增强开发体验。
+
+Web项目管理,提供类似简化版的idea的项目管理，以增强项目管理体验。
 
 ## 功能
-该插件提供以下功能：
-- 插件激活时的初始化功能
-- 自定义命令的实现
-- 资源的清理功能
 
-## 文件结构
-```
-vscode-extension-project
-├── src
-│   ├── extension.ts        # 插件的入口点
-│   └── types
-│       └── index.ts       # 类型和接口定义
-├── .vscode
-│   └── launch.json         # 调试配置
-├── package.json            # npm 配置文件
-├── tsconfig.json           # TypeScript 配置文件
-├── webpack.config.js       # Webpack 配置文件
-└── README.md               # 项目文档
-```
-
-## 安装
-1. 克隆该项目到本地：
-   ```
-   git clone <repository-url>
-   ```
-2. 进入项目目录：
-   ```
-   cd vscode-extension-project
-   ```
-3. 安装依赖：
-   ```
-   npm install
-   ```
-
-## 使用
-1. 在 Visual Studio Code 中打开该项目。
-2. 按 `F5` 启动调试，运行插件。
-3. 使用插件提供的命令。
-
-## 开发
-
-`npm run dev`
+该插件通过界面提供以下功能：
+- Web项目管理, 打开项目、复制项目路径、打开项目文件夹、关键词过滤
+- 创建项目,支持 vue、react、nuxtjs、nextjs、nodejs
 
 ## 贡献
-欢迎提交问题和请求功能，或直接提交代码贡献。
+
+欢迎使用,提交问题和请求功能 https://github.com/nicklin99/vscode-extension-webdev.git，也可以邮件联系 719675210@qq.com
+
+## 发布插件
+
+vsce package --no-dependencies
 
 ## 许可证
 该项目遵循 MIT 许可证。

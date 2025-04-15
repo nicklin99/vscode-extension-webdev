@@ -2,12 +2,12 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "npm",
-			"script": "watch",
-			"label": "devs",
+			"type": "shell",
+			"command": "pnpm run watch",// 具体命令
+			"label": "pnpm run watch",
 			"isBackground": true,
 			"problemMatcher": ["$tsc-watch"],  // 适配 TypeScript 的错误捕获
-			"detail": "npm run watch"
+			"detail": "pnpm run watch"
 		}
 	]
 }

@@ -19,4 +19,9 @@ body {
 .t-table td:hover {
   cursor: pointer;
 }
+.breakline {
+  word-wrap: break-word;
+  white-space: wrap;
+  word-break: break-all;
+}
 </style>
